@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Tilt from "react-parallax-tilt";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -9,22 +10,33 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="logo">
-        <h1>D</h1>
-      </div>
+      <Tilt>
+        <div className="logo">
+          <h1>D</h1>
+        </div>
+      </Tilt>
+
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-item">
-          <a href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a href="/">Events</a>
-        </li>
-        <li className="nav-item">
-          <a href="/">FAQ</a>
-        </li>
-        <li className="nav-item">
-          <a href="/">Student List</a>
-        </li>
+        <Tilt>
+          <li className="nav-item">
+            <a href="/">Home</a>
+          </li>
+        </Tilt>
+        <Tilt>
+          <li className="nav-item">
+            <a href="/">Events</a>
+          </li>
+        </Tilt>
+        <Tilt>
+          <li className="nav-item">
+            <a href="/">FAQ</a>
+          </li>
+        </Tilt>
+        <Tilt>
+          <li className="nav-item">
+            <a href="/">Student List</a>
+          </li>
+        </Tilt>
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (

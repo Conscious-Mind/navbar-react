@@ -10,7 +10,11 @@
 
 .logo h1 {
   font-size: 60px;
-  color: blue;
+  color: whitesmoke;
+}
+
+.logo :hover {
+  cursor: pointer;
 }
 
 .nav-menu {
@@ -37,6 +41,7 @@
     height: 100%;
     text-align: center;
     transition: 0.4s;
+    overflow: hidden;
   }
 
   .nav-menu.active {
